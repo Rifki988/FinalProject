@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styleVALUEJS.css">
+        <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <div class="menu-mobile">
+                <a href="#" onclick="showMenu()">Menu</a>
+            </div>
+            <ul id="menu">
+                <li><a href="/">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="experience.html">EXPERIENCES</a></li>
+                <li><a href="education.html">EDUCATION</a></li>
+                <li><a href="skill.html">SKILLS</a></li>
+                <li><a href="interest.html">INTEREST</a></li>
+                <li><a href="award.html">AWARD</a></li>
+            </ul>
+        </nav>
+        <section id="box-interest">
+            <table border="0" style="padding: 1% 0 0 1%;">
+                <tr>
+                    <th><img src="https://cdn6.aptoide.com/imgs/3/1/e/31eeb5276830b3382d1d080a8047b6ec_fgraphic.png" class="gambar" ></th>
+                    <th><img src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3AtMjAwLWV5ZS0wMzQyNzAyLmpwZw.jpg?s=tN28_tbEAWTdu-kW8tbV6pVB_5U_G7eeY2ht69lxXas" class="gambar"></th>
+                    <th><img src="film.jpg" class="gambar"></th>
+                </tr>
+                <tr>
+                    <th>Bermain Game<br/><i class="fas fa-gamepad"></i></th>
+                    <th>Melakukan Coding<br/><i class="fas fa-code"></i></th>
+                    <th>Icon Film<br/><i class="fas fa-film"></i></th>
+                </tr>
+            </table>
+        </section>
+        <script>
+            function showMenu()
+            {
+                var menu = document.getElementById("menu");
+
+                if(menu.style.display === "block"){
+                    menu.style.display = "none";
+                }else{
+                    menu.style.display = "block";
+                }
+            }
+        </script>
+    </body>
+</html>
